@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    <script src='./bower_components/webcomponentsjs/webcomponents.js'></script>
+    <link rel="import" href="./bower_components/paper-toast/paper-toast.html">
+    <link rel="import" href="./bower_components/paper-button/paper-button.html">
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    </head>
+  <body>
+  <br>
+  <center>
+  <hr>
+  </center>
+
+  <div id="btnblock">  
+    <button id="submitbtn">SEND</button>
+  </div>
+
+  <paper-button raised id="toast" onclick="document.querySelector('#toast3').show()">Send Message</paper-button>
+<paper-toast id="toast3" class="capsule" text="Message sent" style="padding-right: 60px;"></paper-toast>
+
+  <div id="stage" class="stage"></div>
+
+  
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js"></script>
+  <script src="main.js"></script>
+  </body>
+ </html>

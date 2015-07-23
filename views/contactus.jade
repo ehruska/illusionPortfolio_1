@@ -1,0 +1,34 @@
+doctype html(lang='en')
+head
+    meta(charset='utf-8')
+    |     
+    title Untitled
+    |     
+    script(src='./bower_components/webcomponentsjs/webcomponents.js')
+    |     
+    link(rel='import', href='./bower_components/paper-toast/paper-toast.html')
+    |     
+    link(rel='import', href='./bower_components/paper-button/paper-button.html')
+    |     
+    link(rel='stylesheet', type='text/css', href='http://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/css/bootstrap.min.css')
+    |     
+    link(rel='stylesheet', type='text/css', href='main2.css')
+  |   
+body
+    br
+    |   
+    center
+      hr
+    |   
+    #btnblock
+      button#submitbtn SEND
+    |   
+    paper-button#toast(raised='', onclick="document.querySelector('#toast3').show()") Send Message
+    paper-toast#toast3.capsule(text='Message sent', style='padding-right: 60px;')
+    |   
+    #stage.stage
+    |   
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js')
+    |   
+    script(src='main.js')

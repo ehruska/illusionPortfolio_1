@@ -1,0 +1,125 @@
+html,body {
+  background: #e0e0e0;
+  color: #777;
+}
+
+
+.container {
+  margin: 50px auto;
+  width: 800px;
+  min-height: 600px;
+  text-align: center;
+}
+
+.cube-wrap {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin: 0 10px 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.cube {
+  -webkit-transform: translateZ(-100px) translateY(-70px);
+          transform: translateZ(-100px) translateY(-70px);
+}
+.cube, .cube .side {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.cube .side {
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 60px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.cube .front {
+  -webkit-transform: rotateY(0deg) translateZ(100px);
+          transform: rotateY(0deg) translateZ(100px);
+  border: 1px solid #000;
+  border-color: #c8c8c8 #e0e0e0 #f8f8f8;
+}
+.cube .back {
+  -webkit-transform: rotateX(180deg) translateZ(100px) rotateX(180deg);
+          transform: rotateX(180deg) translateZ(100px) rotateX(180deg);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.03) 85%, rgba(0, 0, 0, 0.1) 100%), -webkit-linear-gradient(right, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.03) 10%, rgba(0, 0, 0, 0.03) 90%, rgba(0, 0, 0, 0.1) 100%), #fff;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.03) 20%, rgba(0, 0, 0, 0.03) 85%, rgba(0, 0, 0, 0.1) 100%), linear-gradient(to left, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.03) 10%, rgba(0, 0, 0, 0.03) 90%, rgba(0, 0, 0, 0.1) 100%), #fff;
+  color: #ddd;
+  text-shadow: 0 0 3px #ddd;
+  border-top: 1px solid #999;
+}
+.cube .right {
+  background: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.03) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.16) 0%, transparent 25%, transparent 85%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.03) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.16) 0%, transparent 25%, transparent 85%, rgba(0, 0, 0, 0.1) 100%);
+  -webkit-transform: rotateY(90deg) translateZ(100px);
+          transform: rotateY(90deg) translateZ(100px);
+}
+.cube .left {
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.03) 100%), -webkit-linear-gradient(top, rgba(0, 0, 0, 0.16) 0%, transparent 25%, transparent 85%, rgba(0, 0, 0, 0.1) 100%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.13) 0%, rgba(0, 0, 0, 0.03) 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.16) 0%, transparent 25%, transparent 85%, rgba(0, 0, 0, 0.1) 100%);
+  -webkit-transform: rotateY(-90deg) translateZ(100px);
+          transform: rotateY(-90deg) translateZ(100px);
+}
+.cube .top:after, .cube .bottom:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background: #e0e0e0;
+  -webkit-transform-origin: 0 100%;
+      -ms-transform-origin: 0 100%;
+          transform-origin: 0 100%;
+  -webkit-transform: rotateX(-90deg);
+          transform: rotateX(-90deg);
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.cube .top {
+  -webkit-transform: rotateX(90deg) translateZ(100px);
+          transform: rotateX(90deg) translateZ(100px);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.09) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.09) 100%);
+}
+.cube .top:after {
+  top: 100%;
+}
+.cube .bottom {
+  -webkit-transform: rotateX(-90deg) translateZ(100px);
+          transform: rotateX(-90deg) translateZ(100px);
+  background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.03) 0%, transparent 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.03) 0%, transparent 100%);
+}
+.cube .bottom:after {
+  bottom: 100%;
+}
+a{
+  text-decoration: none;
+  color:#777;
+}
+a:hover{
+  text-decoration: none;
+  color:#777;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
