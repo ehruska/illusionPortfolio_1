@@ -41,6 +41,8 @@ app.post('/sendmsg', function(req, res) {
 	})
 });
 
-var server = app.listen(process.env.PORT || 3034, function() {
+var port = process.env.PORT || 8713;
+
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
