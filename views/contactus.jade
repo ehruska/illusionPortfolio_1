@@ -19,14 +19,11 @@ body
     |   
     center
       hr
-    |   
-    #btnblock
-      button#submitbtn SEND
-    |   
+      #stage.stage
+      #btnblock
+        button#submitbtn SEND
     paper-button#toast(raised='', onclick="document.querySelector('#toast3').show()") Send Message
     paper-toast#toast3.capsule(text='Message sent', style='padding-right: 60px;')
-    |   
-    #stage.stage
     |   
     script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js')
     script(src='https://cdnjs.cloudflare.com/ajax/libs/react/0.13.2/react.js')

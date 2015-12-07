@@ -1,18 +1,18 @@
 @import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 .stage {
   position: relative;
-  margin-top: -90px;
-  top: 50%;
+  margin-top: 90px;
+  /*top: 50%;
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
       -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);*/
 }
 
 label, [type="text"],
 [type="email"],
 textarea, [type="submit"] {
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 hr{
@@ -52,11 +52,14 @@ textarea:hover {
   position: relative;
   box-sizing: border-box;
 }
-
-html, body {
-  height: 100%;
-}
-
+/*html.body{
+  margin: 0;
+  padding:0;
+}*/
+/*html{
+  margin: 0;
+  padding: 0;
+}*/
 *,
 body {
   font-family: "Inconsolata", sans-serif;
@@ -143,9 +146,10 @@ textarea.active {
 }
 
 .stage {
-  max-width: 500px;
-  width: 80%;
+  width: 390px;
+  /*width: 80%;*/
 }
+
 
 #toast{
   height:0px;
@@ -153,22 +157,19 @@ textarea.active {
   visibility: hidden;
 }
 #btnblock{
-  margin-left: 24%;
-  top: 68%;
-  left: 49.2%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-      -ms-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
+  position: relative;
+  margin-left: -260px;
+  margin-top: -80px;
   z-index: 1;
 }
 #submitbtn{
   background: #1a2530;
-  display: inline-block;
-  padding: 0.3em 1em 0.5em;
+  /*display: inline-block;*/
+  /*padding: 0.3em 1em 0.5em;*/
   cursor: pointer;
-  background: -webkit-linear-gradient(left, #18222d, #1a2530);
+  /*background: -webkit-linear-gradient(left, #18222d, #1a2530);
   background: linear-gradient(left, #18222d, #1a2530);
-  box-shadow: inset 3px 3px 15px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 3px 3px 15px -5px rgba(0, 0, 0, 0.1);*/
   text-transform: uppercase;
   color: #27ae60;
   border: 1px solid rgba(41, 128, 185, 0.3);
