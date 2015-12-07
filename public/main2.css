@@ -77,8 +77,11 @@ body {
 
 legend {
   font-size: 1.5em;
+  margin-left: 
   margin-bottom: 1em;
   color: #2980b9;
+  /*comment vv out if want border under header*/
+  border-bottom:0;
 }
 
 label {
@@ -146,7 +149,7 @@ textarea.active {
 }
 
 .stage {
-  width: 390px;
+  width: 455px;
   /*width: 80%;*/
 }
 
@@ -158,8 +161,8 @@ textarea.active {
 }
 #btnblock{
   position: relative;
-  margin-left: -260px;
-  margin-top: -80px;
+  margin-left: -270px;
+  margin-top: -79px;
   z-index: 1;
 }
 #submitbtn{
@@ -177,8 +180,8 @@ textarea.active {
   /*position:absolute;
   margin-top: 465px;
   margin-left: 508px;*/
-  height:42px;
-  width:72px;
+  height:35px;
+  width:87px;
   border-radius: 5px;
   z-index: 1;
 }
